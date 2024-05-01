@@ -115,7 +115,7 @@ export default function FormAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Rect x="170.667" y="128" width="682.667" height="768" rx="20" stroke="black" strokeWidth="20"/>
                 <AnimatedPath

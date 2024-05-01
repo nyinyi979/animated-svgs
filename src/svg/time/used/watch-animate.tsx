@@ -116,7 +116,7 @@ export default function WatchAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Circle cx="512" cy="512" r="288.667" stroke="black" strokeWidth="20"/>
                 <Path d="M362.667 298.667L383.907 128.745C383.96 128.319 384.322 128 384.75 128H639.25C639.678 128 640.04 128.319 640.093 128.745L661.333 298.667" stroke="black" strokeWidth="20" strokeLinecap="round" strokeLinejoin="round"/>

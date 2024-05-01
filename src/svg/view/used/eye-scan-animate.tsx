@@ -111,7 +111,7 @@ export default function EyeScanAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Circle cx="512" cy="512" r="75.3333" stroke="black" strokeWidth="20"/>
                 <Path d="M789.117 511.386C789.222 511.68 789.275 511.826 789.275 512C789.275 512.174 789.222 512.32 789.117 512.614C784.866 524.464 717.078 704 512 704C306.922 704 239.134 524.464 234.883 512.614C234.778 512.32 234.725 512.174 234.725 512C234.725 511.826 234.778 511.68 234.883 511.386C239.134 499.536 306.922 320 512 320C717.078 320 784.866 499.536 789.117 511.386Z" stroke="black" strokeWidth="20"/>

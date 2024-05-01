@@ -40,7 +40,7 @@ export default function NFCAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Path d="M213.333 341.333L426.667 682.667" stroke="black" strokeWidth="20" strokeLinecap="round"/>
                 <AnimatedPath

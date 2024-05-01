@@ -42,7 +42,7 @@ export default function Archive1Animate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Path d="M128 132C128 130.114 128 129.172 128.586 128.586C129.172 128 130.114 128 132 128H892C893.886 128 894.828 128 895.414 128.586C896 129.172 896 130.114 896 132V892C896 893.886 896 894.828 895.414 895.414C894.828 896 893.886 896 892 896H132C130.114 896 129.172 896 128.586 895.414C128 894.828 128 893.886 128 892V132Z" stroke="black" strokeWidth="20"/>
                 <AnimatedPath

@@ -108,7 +108,7 @@ export default function CrossSquareFillAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Rect x="128" y="128" width="768" height="768" fill="black"/>
                 <AnimatedPath

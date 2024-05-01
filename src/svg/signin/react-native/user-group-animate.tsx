@@ -40,7 +40,7 @@ export default function UserGroupAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Path d="M672.667 341.333C672.667 430.067 600.734 502 512 502C423.266 502 351.333 430.067 351.333 341.333C351.333 252.6 423.266 180.667 512 180.667C600.734 180.667 672.667 252.6 672.667 341.333Z" stroke="black" strokeWidth="20" strokeLinecap="round"/>
                 <AnimatedPath

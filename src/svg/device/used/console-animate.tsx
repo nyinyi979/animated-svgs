@@ -110,7 +110,7 @@ export default function ConsoleAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Rect x="554.667" y="597.333" width="85.3333" height="85.3334" rx="1" fill="black"/>
                 <Rect x="298.667" y="469.333" width="85.3333" height="256" rx="1" fill="black"/>

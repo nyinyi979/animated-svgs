@@ -39,7 +39,7 @@ export default function SignInCircleAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Path d="M210.301 813.699C269.972 873.369 345.996 914.005 428.761 930.468C511.527 946.931 597.315 938.482 675.278 906.189C753.241 873.895 819.878 819.208 866.76 749.043C913.643 678.878 938.667 596.387 938.667 512C938.667 427.613 913.643 345.122 866.76 274.957C819.878 204.792 753.241 150.105 675.278 117.811C597.315 85.5179 511.527 77.0685 428.762 93.5315C345.996 109.995 269.972 150.631 210.301 210.301" stroke="black" strokeWidth="20"/>
                 <AnimatedPath

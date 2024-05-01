@@ -114,7 +114,7 @@ export default function ChatAdd3Animate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Path d="M512 170.667H178.667C174.896 170.667 173.01 170.667 171.838 171.839C170.667 173.01 170.667 174.896 170.667 178.667V851.334C170.667 852.276 170.667 852.748 170.96 853.041C171.253 853.334 171.724 853.334 172.667 853.334H845.333C849.105 853.334 850.99 853.334 852.162 852.162C853.333 850.99 853.333 849.105 853.333 845.334V512" stroke="black" strokeWidth="20"/>
                 <AnimatedPath

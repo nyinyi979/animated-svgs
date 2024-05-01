@@ -116,7 +116,7 @@ export default function ShieldAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Path d="M850.133 599.733L515 851.083C513.222 852.417 510.778 852.417 509 851.083L173.867 599.733C171.852 598.222 170.667 595.851 170.667 593.333V172.667C170.667 171.562 171.562 170.667 172.667 170.667H851.333C852.438 170.667 853.333 171.562 853.333 172.667V593.333C853.333 595.851 852.148 598.222 850.133 599.733Z" stroke="black" strokeWidth="20" strokeLinecap="round"/>
                 <AnimatedCircle

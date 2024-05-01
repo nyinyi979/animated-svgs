@@ -115,7 +115,7 @@ export default function InAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Path d="M128 384V890C128 892.828 128 894.243 128.879 895.121C129.757 896 131.172 896 134 896H890C892.828 896 894.243 896 895.121 895.121C896 894.243 896 892.828 896 890V134C896 131.172 896 129.757 895.121 128.879C894.243 128 892.828 128 890 128H384" stroke="black" strokeWidth="20" strokeLinecap="round"/>
                 <AnimatedPath

@@ -101,7 +101,7 @@ export default function OdometerAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Mask id="path-1-inside-1_2488_40" fill="white">
                     <Path d="M962 697C962 637.905 950.36 579.389 927.746 524.792C905.131 470.196 871.984 420.588 830.198 378.802C788.412 337.016 738.804 303.869 684.208 281.254C629.611 258.64 571.095 247 512 247C452.905 247 394.389 258.64 339.792 281.254C285.196 303.869 235.588 337.016 193.802 378.802C152.016 420.588 118.869 470.196 96.2542 524.792C73.6396 579.389 62 637.905 62 697L512 697H962Z"/>

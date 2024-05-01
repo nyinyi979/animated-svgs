@@ -44,7 +44,7 @@ export default function SettingAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 
                 <Path d="M256 512L256 213.333" stroke="black" strokeWidth="20" strokeLinecap="round"/>

@@ -114,7 +114,7 @@ export default function PaperAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Rect x="213.333" y="170.667" width="597.333" height="725.333" rx="2" stroke="black" strokeWidth="20"/>
                 <AnimatedPath

@@ -52,7 +52,7 @@ export default function AlarmClock1Animate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Ellipse cx="512" cy="554.667" rx="298.667" ry="298.667" stroke="black" strokeWidth="20"/>
                 <AnimatedPath

@@ -103,7 +103,7 @@ export default function ClockAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Circle cx="512" cy="512" r="351.333" stroke="black" strokeWidth="20"/>
                 <AnimatedPath

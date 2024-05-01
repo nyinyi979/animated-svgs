@@ -41,7 +41,7 @@ export default function StopAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >   
                 <Rect x="256" y="213.333" width="170.667" height="597.333" rx="1" stroke="black" strokeWidth="20" strokeLinecap="round"/>
                 <Rect x="597.333" y="213.333" width="170.667" height="597.333" rx="1" stroke="black" strokeWidth="20" strokeLinecap="round"/>

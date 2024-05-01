@@ -45,7 +45,7 @@ export default function ChatSearchAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Path d="M489.026 853.334H129C128.448 853.334 128 852.886 128 852.334V174.667C128 172.458 129.791 170.667 132 170.667H892C894.209 170.667 896 172.458 896 174.667V485.744" stroke="black" strokeWidth="20" strokeLinecap="round" strokeLinejoin="round"/>
                 <AnimatedPath

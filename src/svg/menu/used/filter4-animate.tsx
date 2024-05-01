@@ -103,7 +103,7 @@ export default function Filter4Animate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Path d="M213.333 512L213.333 170.667" stroke="black" strokeWidth="20" strokeLinecap="round"/>
                 <Path d="M810.667 853.333L810.667 768" stroke="black" strokeWidth="20" strokeLinecap="round"/>

@@ -108,7 +108,7 @@ export default function WidgetAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                     
                 <Rect x="85.3335" y="128" width="853.333" height="384" rx="20" stroke="black" strokeWidth="20"/>

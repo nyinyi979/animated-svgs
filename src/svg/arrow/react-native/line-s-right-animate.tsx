@@ -32,7 +32,7 @@ export default function LineSRightAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Rect x="384" y="640" width="256" height="256" rx="2" transform="rotate(90 384 640)" stroke="black" strokeWidth="20"/>
                 <Path d="M768 128L896 298.667L768 469.333" stroke="black" strokeWidth="20"/>

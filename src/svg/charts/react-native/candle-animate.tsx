@@ -35,7 +35,7 @@ export default function CandleAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Path d="M341.333 128V256" stroke="black" strokeWidth="20" strokeLinecap="round"/>
                 <Path d="M341.333 597.334V725.334" stroke="black" strokeWidth="20" strokeLinecap="round"/>

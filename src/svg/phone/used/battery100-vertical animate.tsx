@@ -109,7 +109,7 @@ export default function Battery100VerticalAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Rect x="384" y="42" width="256" height="132" rx="20" fill="black"/>
                 <AnimatedPath

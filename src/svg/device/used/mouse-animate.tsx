@@ -106,7 +106,7 @@ export default function MouseAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <path d="M213.333 370.666C213.333 276.386 213.333 229.245 242.623 199.956C271.912 170.667 319.052 170.667 413.333 170.667H610.667C704.948 170.667 752.088 170.667 781.377 199.956C810.667 229.245 810.667 276.386 810.667 370.667V856C810.667 874.856 810.667 884.284 804.809 890.142C798.951 896 789.523 896 770.667 896H253.333C234.477 896 225.049 896 219.191 890.142C213.333 884.284 213.333 874.856 213.333 856V370.666Z" stroke="black" strokeWidth="20" strokeLinejoin="round"/>
                 <AnimatedPath

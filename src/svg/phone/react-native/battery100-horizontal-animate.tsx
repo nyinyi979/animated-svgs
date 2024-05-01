@@ -45,7 +45,7 @@ export default function Battery100HorizontalAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Path d="M982 620V404C982 392.954 973.046 384 962 384H870C858.954 384 850 392.954 850 404V620C850 631.046 858.954 640 870 640H962C973.046 640 982 631.046 982 620Z" fill="black"/>
                 <AnimatedPath

@@ -39,7 +39,7 @@ export default function SignOutCircleAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Path d="M341.333 807.603C393.223 837.562 452.083 853.333 512 853.333C571.916 853.333 630.777 837.562 682.667 807.603C734.556 777.645 777.645 734.556 807.603 682.667C837.562 630.778 853.333 571.917 853.333 512C853.333 452.084 837.562 393.223 807.603 341.333C777.645 289.444 734.556 246.355 682.667 216.397C630.777 186.438 571.916 170.667 512 170.667C452.083 170.667 393.223 186.438 341.333 216.397" stroke="black" strokeWidth="20"/>
                 <AnimatedPath

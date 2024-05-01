@@ -38,7 +38,7 @@ export default function Message1Animate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Rect x="170.667" y="256" width="682.667" height="512" rx="2" stroke="black" strokeWidth="20"/>
                 <Path d="M170.667 384L511.105 554.219C511.668 554.501 512.331 554.501 512.894 554.219L853.333 384" stroke="black" strokeWidth="20"/>

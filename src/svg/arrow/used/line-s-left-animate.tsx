@@ -88,7 +88,7 @@ export default function LineSLeftArrowAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >   
                 <Rect x="640" y="384" width="256" height="256" rx="2" transform="rotate(-90 640 384)" stroke="black" strokeWidth="20"/>
                 <Path d="M256 896L128 725.333L256 554.667" stroke="black" strokeWidth="20"/>

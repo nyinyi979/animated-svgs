@@ -45,7 +45,7 @@ export default function DirectionAnimate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Path d="M538.901 84.49L538.901 211.281" stroke="black" strokeWidth="20" strokeLinecap="round"/>
                 <Path d="M538.901 426.048L538.901 555.427" stroke="black" strokeWidth="20" strokeLinecap="round"/>

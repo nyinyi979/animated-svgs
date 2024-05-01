@@ -36,7 +36,7 @@ export default function Globe2Animate(){
             <AnimatedSvg 
                 animatedProps={svgAnimatedProps}
                 style={styles.svg}
-                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/Svg"
+                viewBox="0 0 1024 1024" fill="none"
             >
                 <Circle cx="512" cy="512" r="390" stroke="black" strokeWidth="20"/>
                 <Line x1="509" y1="112" x2="509" y2="899" stroke="black" strokeWidth="20"/>
