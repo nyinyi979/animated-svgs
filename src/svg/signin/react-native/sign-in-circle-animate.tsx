@@ -1,5 +1,5 @@
 import React from "react";
-import { Svg, Path, Circle } from "react-native-svg";
+import { Svg, Path } from "react-native-svg";
 import { StyleSheet, View } from "react-native";
 import Animated, { Easing, useAnimatedProps, useSharedValue, withTiming } from "react-native-reanimated";
 

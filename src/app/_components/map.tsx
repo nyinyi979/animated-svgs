@@ -10,7 +10,7 @@ export default function MapSVGs(props: eachSVGType){
     return(
         <div>
             <p>Map svgs</p>
-            <div className="grid grid-cols-16 gap-2">
+            <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
                 <MapAnimate {...props} />
                 <GPSAnimate {...props} />
                 <CompassAnimate {...props} />

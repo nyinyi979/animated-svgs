@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import { motion } from "framer-motion";
+import { Copied, Copy } from "./copy-done";
 export default function Drawer({inanimate,opacity,react,reactNative,display,svg,translateX,name}:
 {
     opacity: number, 
@@ -29,7 +30,7 @@ export default function Drawer({inanimate,opacity,react,reactNative,display,svg,
                         translateX:translateX,
                     }}
                     style={{display:display?"block":"none"}}
-                    className="w-[30%] h-[100vh] rounded-l-md bg-gray-100/90 p-5 fixed top-0 right-0 overflow-auto z-50"    
+                    className="lg:w-[30%] w-[70%] h-[100vh] rounded-l-md bg-gray-100/90 p-5 fixed top-0 right-0 overflow-auto z-50"    
                 >
                     <p className="text-2xl font-semibold">{name}</p>
                     <Code heading="React" codes={react}/>
@@ -70,9 +71,9 @@ function Code({codes,heading}:{codes:string|string[],heading:"React"|"React nati
             <div className="roboto w-full overflow-x-auto h-[40%] text-cyan-700 rounded-md whitespace-pre relative p-2 bg-gray-200 shadow-lg">
                 <button 
                     onClick={copyCode}
-                    className="sticky float-right right-2 top-2 p-1 bg-gray-50 hover:bg-gray-100 rounded-md duration-300"
+                    className="sticky float-right w-7 h-7 right-2 top-2 p-1 bg-cyan-50/70 hover:bg-cyan-100 rounded-md duration-300"
                 >
-                    {copy? "Copied" : "Copy"}
+                    {copy? <Copied /> : <Copy /> }
                 </button>
                 {isArray? codes[activeCode] : codes}
         </div>

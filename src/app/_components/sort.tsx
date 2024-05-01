@@ -8,22 +8,23 @@ import SortUp1Animate from "@/svg/sort/used/sort-up1-animate";
 import SortUp2Animate from "@/svg/sort/used/sort-up2-animate";
 import VerticalSort1Animate from "@/svg/sort/used/vertical-sort1-animate";
 import VerticalSort2Animate from "@/svg/sort/used/vertical-sort2-animate";
+import { eachSVGType } from "../page";
 
-export default function SortSVGs(){
+export default function SortSVGs(props: eachSVGType){
     return(
         <div>
             <p>Sort svgs</p>
-            <div className="grid grid-cols-16 gap-2">
-                <CollapseAnimate />
-                <ShuffleAnimate />
-                <SortAAnimate />
-                <SortDownAnimate />
-                <SortList1Animate />
-                <SortList2Animate />
-                <SortUp1Animate />
-                <SortUp2Animate />
-                <VerticalSort1Animate />
-                <VerticalSort2Animate />  
+            <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
+                <CollapseAnimate {...props} />
+                <ShuffleAnimate {...props} />
+                <SortAAnimate {...props} />
+                <SortDownAnimate {...props} />
+                <SortList1Animate {...props} />
+                <SortList2Animate {...props} />
+                <SortUp1Animate {...props} />
+                <SortUp2Animate {...props} />
+                <VerticalSort1Animate {...props} />
+                <VerticalSort2Animate {...props} />  
             </div>
         </div>
     )

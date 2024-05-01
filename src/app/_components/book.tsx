@@ -14,7 +14,7 @@ export default function BookSVGs(props:eachSVGType){
     return(
         <div>
             <p>Book svgs</p>
-            <div className="grid grid-cols-16 gap-2">
+            <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
                 <BookAnimate {...props} />
                 <BookCheckAnimate {...props} />
                 <BookOpenAnimate {...props} />

@@ -108,16 +108,36 @@ export default function Home() {
       <NotificationSVGs
         drawerAnimate={animate}
         setDetails={setDetails} />  
-      <ScreenSVGs />
-      <ReactionSVGs />
-      <SettingSVGs />
-      <SignInSVGs />
-      <SocialSVGs />
-      <SortSVGs />
-      <TimeSVGs />
-      <SecuritySVGs />
-      <PhoneSVGs />
-      <EyeSVGs />
+      <PhoneSVGs
+        drawerAnimate={animate}
+        setDetails={setDetails} />
+      <ReactionSVGs
+        drawerAnimate={animate}
+        setDetails={setDetails} />
+      <ScreenSVGs
+        drawerAnimate={animate}
+        setDetails={setDetails} />
+      <SecuritySVGs
+        drawerAnimate={animate}
+        setDetails={setDetails} />
+      <SettingSVGs
+        drawerAnimate={animate}
+        setDetails={setDetails} />
+      <SignInSVGs
+        drawerAnimate={animate}
+        setDetails={setDetails} />
+      <SocialSVGs
+        drawerAnimate={animate}
+        setDetails={setDetails} />
+      <SortSVGs
+        drawerAnimate={animate}
+        setDetails={setDetails} />
+      <TimeSVGs
+        drawerAnimate={animate}
+        setDetails={setDetails} />
+      <EyeSVGs
+        drawerAnimate={animate}
+        setDetails={setDetails} />
       <Drawer 
         inanimate={inanimate}
         opacity={animationValue.opacity}

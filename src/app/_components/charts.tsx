@@ -11,7 +11,7 @@ export default function ChartsSVGs(props:eachSVGType){
     return(
         <div>
             <p>Charts svgs</p>
-            <div className="grid grid-cols-16 gap-2">
+            <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
                 <BarChart1Animate {...props} />
                 <BarChart2Animate {...props} />
                 <CandleAnimate {...props} />

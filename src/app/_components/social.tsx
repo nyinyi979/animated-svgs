@@ -7,21 +7,22 @@ import Chat2Animate from "@/svg/social/used/chat2-animate";
 import Chat3Animate from "@/svg/social/used/chat3-animate";
 import Chat4Animate from "@/svg/social/used/chat4-animate";
 import IGAnimate from "@/svg/social/used/ig-animate";
+import { eachSVGType } from "../page";
 
-export default function SocialSVGs(){
+export default function SocialSVGs(props: eachSVGType){
     return(
         <div>
             <p>Social svgs</p>
-            <div className="grid grid-cols-16 gap-2">
-                <ChatAdd1Animate />
-                <ChatAdd2Animate />
-                <ChatAdd3Animate />
-                <ChatSearchAnimate />
-                <Chat1Animate />
-                <Chat2Animate />
-                <Chat3Animate />
-                <Chat4Animate />
-                <IGAnimate />
+            <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
+                <ChatAdd1Animate {...props} />
+                <ChatAdd2Animate {...props} />
+                <ChatAdd3Animate {...props} />
+                <ChatSearchAnimate {...props} />
+                <Chat1Animate {...props} />
+                <Chat2Animate {...props} />
+                <Chat3Animate {...props} />
+                <Chat4Animate {...props} />
+                <IGAnimate {...props} />
             </div>
         </div>
     )

@@ -5,19 +5,20 @@ import TimeProgressAnimate from "@/svg/time/used/time-progress-animate";
 import Timer1Animate from "@/svg/time/used/timer1-animate";
 import Timer2Animate from "@/svg/time/used/timer2-animate";
 import WatchAnimate from "@/svg/time/used/watch-animate";
+import { eachSVGType } from "../page";
 
-export default function TimeSVGs(){
+export default function TimeSVGs(props: eachSVGType){
     return(
         <div>
             <p>Time svgs</p>
-            <div className="grid grid-cols-16 gap-2">
-                <AlarmClock1Animate />
-                <AlarmClock2Animate />
-                <ClockAnimate />
-                <TimeProgressAnimate />
-                <Timer1Animate />
-                <Timer2Animate />
-                <WatchAnimate />
+            <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
+                <AlarmClock1Animate {...props} />
+                <AlarmClock2Animate {...props} />
+                <ClockAnimate {...props} />
+                <TimeProgressAnimate {...props} />
+                <Timer1Animate {...props} />
+                <Timer2Animate {...props} />
+                <WatchAnimate {...props} />
             </div>
         </div>
     )

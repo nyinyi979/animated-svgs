@@ -8,7 +8,7 @@ export default function NotificationSVGs(props: eachSVGType){
     return(
         <div>
             <p>Notifications svgs</p>
-            <div className="grid grid-cols-16 gap-2">
+            <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
                 <BellAnimate {...props} />
                 <BellPinAnimate {...props} />
                 <FireAnimate {...props} />

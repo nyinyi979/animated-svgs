@@ -24,7 +24,7 @@ export default function MMSVGs(props: eachSVGType){
     return(
         <div>
             <p>Multimedia svgs</p>
-            <div className="grid grid-cols-16 gap-2">
+            <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
                 <FolderAnimate {...props} />
                 <FolderFileAnimate {...props} />
                 <FolderOpenAnimate {...props} />

@@ -5,19 +5,20 @@ import LightningAnimate from "@/svg/phone/used/lightning-animate";
 import LightningCircleAnimate from "@/svg/phone/used/lightning-circle-animate";
 import Lightning2Animate from "@/svg/phone/used/lightning2-animate";
 import NFCAnimate from "@/svg/phone/used/nfc-animate";
+import { eachSVGType } from "../page";
 
-export default function PhoneSVGs(){
+export default function PhoneSVGs(props: eachSVGType){
     return(
         <div>
             <p>Phone svgs</p>
-            <div className="grid grid-cols-16 gap-2">
-                <Battery100VerticalAnimate />
-                <Battery100HorizontalAnimate />
-                <CameraAnimate />
-                <LightningCircleAnimate />
-                <LightningAnimate />
-                <Lightning2Animate />
-                <NFCAnimate />
+            <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
+                <Battery100VerticalAnimate {...props} />
+                <Battery100HorizontalAnimate {...props} />
+                <CameraAnimate {...props} />
+                <LightningCircleAnimate {...props} />
+                <LightningAnimate {...props} />
+                <Lightning2Animate {...props} />
+                <NFCAnimate {...props} />
             </div>
         </div>
     )

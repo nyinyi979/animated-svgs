@@ -23,8 +23,7 @@ export default function Search2Animate({drawerAnimate,setDetails}:eachSVGType){
     const openDrawer = () =>{
         setDetails({
             name:"Search",
-            react:`"use client"
-import React from "react"
+            react:`import React from "react"
 import { motion } from "framer-motion"
 
 export default function SearchAnimate(){

@@ -23,8 +23,7 @@ export default function SettingLinesAnimate({drawerAnimate,setDetails}:eachSVGTy
     const openDrawer = () =>{
         setDetails({
             name:"Setting lines",
-            react:`"use client"
-import React from "react"
+            react:`import React from "react"
 import { motion } from "framer-motion"
 
 export default function SettingLinesAnimate(){

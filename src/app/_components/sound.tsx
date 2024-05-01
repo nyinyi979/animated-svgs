@@ -13,16 +13,16 @@ export default function SoundSVGs(props:eachSVGType){
     return(
         <div>
             <p>Sound svgs</p>
-            <div className="grid grid-cols-16 gap-2">
+            <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
                 <MicAnimate {...props} />
-                <MusicAnimate />
-                <NoteAnimate />
-                <PlayAnimate />
-                <SoundMaxAnimate />
-                <SoundMinAnimate />
-                <StopAnimate />
-                <StopPlayAnimate />
-                <VideoAnimate />
+                <MusicAnimate {...props} />
+                <NoteAnimate {...props} />
+                <PlayAnimate {...props} />
+                <SoundMaxAnimate {...props} />
+                <SoundMinAnimate {...props} />
+                <StopAnimate {...props} />
+                <StopPlayAnimate {...props} />
+                <VideoAnimate {...props} />
             </div>
         </div>
     )

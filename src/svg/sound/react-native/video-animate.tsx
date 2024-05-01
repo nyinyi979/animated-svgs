@@ -1,6 +1,6 @@
 import React from "react";
-import { Svg, Path, Rect, Circle } from "react-native-svg";
-import { StyleSheet, View } from "react-native";
+import { Svg, Path, Circle } from "react-native-svg";
+import { StyleSheet } from "react-native";
 import Animated, { Easing, useAnimatedProps, useAnimatedStyle, useSharedValue, withSequence, withTiming } from "react-native-reanimated";
 
 export default function VideoAnimate(){

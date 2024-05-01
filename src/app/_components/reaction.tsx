@@ -6,20 +6,21 @@ import HeartBrokenAnimate from "@/svg/reaction/used/heart-broken-animate";
 import LabelAnimate from "@/svg/reaction/used/label-animate";
 import PinAnimate from "@/svg/reaction/used/pin-animate";
 import StarAnimate from "@/svg/reaction/used/star-animate";
+import { eachSVGType } from "../page";
 
-export default function ReactionSVGs(){
+export default function ReactionSVGs(props: eachSVGType){
     return(
         <div>
             <p>Reaction svgs</p>
-            <div className="grid grid-cols-16 gap-2">
-                <BookmarkAnimate />
-                <Flag1Animate />
-                <Flag2Animate />
-                <Flag3Animate />
-                <HeartBrokenAnimate />
-                <LabelAnimate />
-                <PinAnimate />
-                <StarAnimate />
+            <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
+                <BookmarkAnimate {...props} />
+                <Flag1Animate {...props} />
+                <Flag2Animate {...props} />
+                <Flag3Animate {...props} />
+                <HeartBrokenAnimate {...props} />
+                <LabelAnimate {...props} />
+                <PinAnimate {...props} />
+                <StarAnimate {...props} />
             </div>
         </div>
     )
