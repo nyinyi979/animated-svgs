@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 export default function VideoAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
         translateX: 0,
@@ -45,7 +45,6 @@ export default function VideoAnimate(){
                     animate={{translateX:animationValue.translateX,translateY:animationValue.translateY}} 
                     d="M811 380.5H640.333C600.107 380.5 579.994 380.5 567.497 368.003C555 355.506 555 335.393 555 295.167V128H582.366C588.276 128 591.231 128 593.907 129.068C596.584 130.135 598.727 132.169 603.015 136.237L701.833 230L802.891 337.846C806.896 342.121 808.899 344.258 809.95 346.915C811 349.572 811 352.501 811 358.359V380.5Z" fill="black" stroke="white" strokeWidth="20"/>
             </motion.svg>
-
         </div>
     )
 }

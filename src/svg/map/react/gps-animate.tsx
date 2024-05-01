@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function GPSAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -62,6 +62,5 @@ export default function GPSAnimate(){
                     d="M128 512H213.333" stroke="black" strokeWidth="20" strokeLinecap="round"/>
             </motion.svg>
         </div>
-
     )
 }

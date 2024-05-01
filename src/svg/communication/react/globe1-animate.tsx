@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function Globe1Animate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -36,6 +36,5 @@ export default function Globe1Animate(){
                 <path d="M768.333 778.333C768.333 809.324 742.95 840.073 695.756 863.67C649.16 886.968 584.089 901.667 511.667 901.667C439.245 901.667 374.173 886.968 327.577 863.67C280.383 840.073 255 809.324 255 778.333C255 747.343 280.383 716.594 327.577 692.997C374.173 669.699 439.245 655 511.667 655C584.089 655 649.16 669.699 695.756 692.997C742.95 716.594 768.333 747.343 768.333 778.333Z" stroke="black" strokeWidth="20"/>
             </motion.svg>
         </div>
-
     )
 }

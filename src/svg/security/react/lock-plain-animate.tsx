@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function LockPlainAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -36,6 +36,5 @@ export default function LockPlainAnimate(){
                     d="M682.667 341.333V138C682.667 133.286 682.667 130.929 681.202 129.464C679.738 128 677.381 128 672.667 128H351.333C346.619 128 344.262 128 342.798 129.464C341.333 130.929 341.333 133.286 341.333 138V341.333" stroke="black" strokeWidth="20" strokeLinecap="round"/>
             </motion.svg>
         </div>
-
     )
 }

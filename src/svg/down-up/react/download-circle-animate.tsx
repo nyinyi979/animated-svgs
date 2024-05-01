@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function DownloadCircleAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -42,6 +42,5 @@ export default function DownloadCircleAnimate(){
                     d="M512 554.667L505.753 562.475L512 567.473L518.247 562.475L512 554.667ZM522 170.667C522 165.144 517.523 160.667 512 160.667C506.477 160.667 502 165.144 502 170.667L522 170.667ZM292.42 391.809L505.753 562.475L518.247 546.858L304.914 376.191L292.42 391.809ZM518.247 562.475L731.58 391.809L719.086 376.191L505.753 546.858L518.247 562.475ZM522 554.667L522 170.667L502 170.667L502 554.667L522 554.667Z" fill="black"/>
             </motion.svg>
         </div>
-
     )
 }

@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function CameraAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -35,6 +35,5 @@ export default function CameraAnimate(){
                     animate={{pathLength:[animationValue.pathLength,1]}} d="M682.067 554.667C682.067 648.592 605.925 724.733 512 724.733C418.075 724.733 341.933 648.592 341.933 554.667C341.933 460.741 418.075 384.6 512 384.6C605.925 384.6 682.067 460.741 682.067 554.667Z" stroke="black" strokeWidth="20"/>
             </motion.svg>
         </div>
-
     )
 }

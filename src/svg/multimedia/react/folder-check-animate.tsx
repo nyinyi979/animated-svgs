@@ -35,8 +35,6 @@ export default function FolderCheckAnimate(){
                     animate={{pathLength:[animationValue.pathLength,1]}}
                     d="M170.667 704L266.727 800.06C272.585 805.918 282.082 805.918 287.94 800.06L490.667 597.333" stroke="black" strokeWidth="20"/>
             </motion.svg>
-    
         </div>
-
     )
 }

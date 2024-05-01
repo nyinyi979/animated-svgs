@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function Archive0Animate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -19,6 +19,7 @@ export default function Archive0Animate(){
             scale: 1
         })
     }
+
     return(
         <div 
             onPointerEnter={animate}

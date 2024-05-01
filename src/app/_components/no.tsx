@@ -1,13 +1,14 @@
-import CancelAnimate from "@/svg/no/react/cancel-animate";
-import RemoveAnimate from "@/svg/no/react/remove-animate";
+import CancelAnimate from "@/svg/no/used/cancel-animate";
+import RemoveAnimate from "@/svg/no/used/remove-animate";
+import { eachSVGType } from "../page";
 
-export default function NoSVGs(){
+export default function NoSVGs(props: eachSVGType){
     return(
         <div>
             <p>No svgs</p>
-            <div className="grid grid-cols-12 gap-2">
-                <CancelAnimate />
-                <RemoveAnimate /> 
+            <div className="grid grid-cols-16 gap-2">
+                <CancelAnimate {...props} />
+                <RemoveAnimate {...props} /> 
             </div>
         </div>
     )

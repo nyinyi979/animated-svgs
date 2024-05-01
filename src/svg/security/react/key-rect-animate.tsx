@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function KeyRectAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -40,6 +40,5 @@ export default function KeyRectAnimate(){
                     d="M426.667 512H597.333M725.333 597.333V512.15C725.333 512.067 725.266 512 725.183 512H597.333M597.333 512V597.333" stroke="black" strokeWidth="20" strokeLinecap="round"/>
             </motion.svg>
         </div>
-
     )
 }

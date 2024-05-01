@@ -1,25 +1,22 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function LoadingAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
         pathLength: 1,
         scale: 1,
-        translateY: [0],
     })
     const animate = () =>{
         setAnimationValue({
             pathLength: 0,
             scale: 1.1,
-            translateY: [0,-80,0]
         })
     }
     const inanimate = () =>{
         setAnimationValue({
             pathLength: 1,
             scale: 1,
-            translateY: [0]
         })
     }
     return(
@@ -94,6 +91,5 @@ export default function LoadingAnimate(){
                     d="M676.706 514L912 514" stroke="black" strokeWidth="20"/>
             </motion.svg>
         </div>
-
     )
 }

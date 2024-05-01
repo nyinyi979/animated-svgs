@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function Message2Animate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -36,6 +36,5 @@ export default function Message2Animate(){
                     d="M511.105 554.219L170.667 384V766C170.667 767.105 171.562 768 172.667 768H851.333C852.438 768 853.333 767.105 853.333 766V384L512.894 554.219C512.331 554.501 511.668 554.501 511.105 554.219Z" fill="black"/>
             </motion.svg>
         </div>
-
     )
 }

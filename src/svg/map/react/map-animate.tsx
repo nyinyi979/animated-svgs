@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function MapAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -46,6 +46,5 @@ export default function MapAnimate(){
                     d="M341.333 725.333L341.333 213.333" stroke="black" strokeWidth="20"/>
             </motion.svg>
         </div>
-
     )
 }

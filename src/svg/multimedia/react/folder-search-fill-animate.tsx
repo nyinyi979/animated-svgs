@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 export default function FolderSearchFillAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
         scale: 1,
@@ -40,8 +40,6 @@ export default function FolderSearchFillAnimate(){
                     transition={{duration:.5}}
                     d="M597.333 682.667L661.333 746.667" stroke="black" strokeWidth="20" strokeLinecap="round"/>
             </motion.svg>
-
         </div>
-
     )
 }

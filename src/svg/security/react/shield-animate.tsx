@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function ShieldAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -47,6 +47,5 @@ export default function ShieldAnimate(){
                     cx="640" cy="426.667" rx="42.6667" ry="42.6667" fill="black"/>
             </motion.svg>
         </div>
-
     )
 }

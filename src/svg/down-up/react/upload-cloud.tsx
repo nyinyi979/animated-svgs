@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function UploadCloudAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -42,6 +42,5 @@ export default function UploadCloudAnimate(){
                     d="M512 512L504.929 504.929L512 497.858L519.071 504.929L512 512ZM522 896C522 901.523 517.523 906 512 906C506.477 906 502 901.523 502 896L522 896ZM334.262 675.596L504.929 504.929L519.071 519.071L348.404 689.738L334.262 675.596ZM519.071 504.929L689.738 675.596L675.596 689.738L504.929 519.071L519.071 504.929ZM522 512L522 896L502 896L502 512L522 512Z" fill="black"/>
             </motion.svg>
         </div>
-
     )
 }

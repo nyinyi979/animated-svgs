@@ -1,30 +1,21 @@
-import Cross_PathFill from "@/svg/cross/react/cross-pathFill";
-import Cross_Scale from "@/svg/cross/react/cross-scale";
-import CrossRoundFill_PathFill from "@/svg/cross/react/cross-round-fill-pathFill";
-import CrossRoundFill_Scale from "@/svg/cross/react/cross-round-fill-scale";
-import CrossRound_PathFill from "@/svg/cross/react/cross-round-pathFill";
-import CrossRound_Scale from "@/svg/cross/react/cross-round-scale";
-import CrossSquareFill_PathFill from "@/svg/cross/react/cross-square-fill-pathFill";
-import CrossSquareFill_Scale from "@/svg/cross/react/cross-square-fill-scale";
-import CrossSquare_PathFill from "@/svg/cross/react/cross-square-pathFill";
-import CrossSquare_Scale from "@/svg/cross/react/cross-square-scale";
+import CrossAnimate from "@/svg/cross/used/cross-animate";
+import CrossRoundAnimate from "@/svg/cross/used/cross-round-animate";
+import CrossRoundFillAnimate from "@/svg/cross/used/cross-round-fill-animate";
+import CrossSquareAnimate from "@/svg/cross/used/cross-square-animate";
+import CrossSquareFillAnimate from "@/svg/cross/used/cross-square-fill-animate";
+import { eachSVGType } from "../page";
 
-export default function CrossSVGs(){
+export default function CrossSVGs(props:eachSVGType){
     return(
         <div>
             <p>Cross (x) svgs</p>
-            <div className="grid grid-cols-12 gap-2">
-                <Cross_PathFill />
-                <Cross_Scale />
-                <CrossRoundFill_PathFill />
-                <CrossRoundFill_Scale />
-                <CrossRound_PathFill />
-                <CrossRound_Scale />
-                <CrossSquareFill_PathFill />
-                <CrossSquareFill_Scale />
-                <CrossSquare_PathFill />
-                <CrossSquare_Scale />
-            </div>
+            <div className="grid grid-cols-16 gap-2">
+                <CrossAnimate {...props} />
+                <CrossRoundAnimate {...props} />
+                <CrossSquareAnimate {...props} />
+                <CrossRoundFillAnimate {...props} />
+                <CrossSquareFillAnimate {...props} />    
+            </div>        
         </div>
     )
 }

@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function FolderAddAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -36,6 +36,5 @@ export default function FolderAddAnimate(){
                     d="M682.667 810.667H810.667M810.667 810.667H938.667M810.667 810.667V938.667M810.667 810.667V682.667" stroke="black" strokeWidth="20"/>
             </motion.svg>
         </div>
-
     )
 }

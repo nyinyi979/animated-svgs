@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function Battery100VerticalAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -36,6 +36,5 @@ export default function Battery100VerticalAnimate(){
                     d="M514 980V217.5" stroke="black" strokeWidth="500" strokeLinecap="butt"/>
             </motion.svg>
         </div>
-
     )
 }

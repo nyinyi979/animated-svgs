@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function PINAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -43,6 +43,5 @@ export default function PINAnimate(){
                     d="M844.554 746.667C878.257 766.125 896 788.198 896 810.667C896 833.135 878.257 855.208 844.554 874.667C810.851 894.125 762.375 910.284 704 921.518C645.625 932.752 579.406 938.667 512 938.667C444.594 938.667 378.375 932.752 320 921.518C261.625 910.284 213.149 894.125 179.446 874.667C145.743 855.208 128 833.135 128 810.667C128 788.198 145.743 766.125 179.446 746.667" stroke="black" strokeWidth="20" strokeLinecap="round"/>
             </motion.svg>
         </div>
-
     )
 }

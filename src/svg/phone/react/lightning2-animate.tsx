@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function Lightning2Animate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -37,6 +37,5 @@ export default function Lightning2Animate(){
 
             </motion.svg>
         </div>
-
     )
 }

@@ -1,21 +1,21 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function OdometerAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
-        rotate: [0],
+        rotate: 0,
         scale: 1
     })
     const animate = () =>{
         setAnimationValue({
-            rotate: [0,20],
+            rotate: 20,
             scale: 1.1
         })
     }
     const inanimate = () =>{
         setAnimationValue({
-            rotate: [20,0],
+            rotate: 0,
             scale: 1
         })
     }
@@ -41,9 +41,7 @@ export default function OdometerAnimate(){
                     initial={{rotate:0}}
                     animate={{rotate:animationValue.rotate}}
                     d="M757.292 485.843C761.071 481.815 760.87 475.487 756.843 471.708C752.815 467.929 746.487 468.13 742.708 472.157L757.292 485.843ZM629.292 622.253L757.292 485.843L742.708 472.157L614.708 608.567L629.292 622.253Z" fill="black"/>
-
             </motion.svg>
         </div>
-
     )
 }

@@ -1,30 +1,31 @@
-import BookAnimate from "@/svg/book/react/book-animate";
-import BookCheckAnimate from "@/svg/book/react/book-check-animate";
-import BookOpenAnimate from "@/svg/book/react/book-open-animate";
-import Clipboard1Animate from "@/svg/book/react/clipboard1-animate";
-import Clipboard2Animate from "@/svg/book/react/clipboard2-animate";
-import FormAnimate from "@/svg/book/react/form-animate";
-import NotebookAnimate from "@/svg/book/react/notebook-animate";
-import Paper1Animate from "@/svg/book/react/paper1-animate";
-import Paper2Animate from "@/svg/book/react/paper2-animate";
-import PrintAnimate from "@/svg/book/react/print-animate";
+import BookAnimate from "@/svg/book/used/book-animate";
+import BookCheckAnimate from "@/svg/book/used/book-check-animate";
+import BookOpenAnimate from "@/svg/book/used/book-open-animate";
+import Clipboard1Animate from "@/svg/book/used/clipboard1-animate";
+import Clipboard2Animate from "@/svg/book/used/clipboard2-animate";
+import FormAnimate from "@/svg/book/used/form-animate";
+import NotebookAnimate from "@/svg/book/used/notebook-animate";
+import Paper1Animate from "@/svg/book/used/paper1-animate";
+import Paper2Animate from "@/svg/book/used/paper2-animate";
+import PrintAnimate from "@/svg/book/used/print-animate";
+import { eachSVGType } from "../page";
 
-export default function BookSVGs(){
+export default function BookSVGs(props:eachSVGType){
     return(
         <div>
             <p>Book svgs</p>
-            <div className="grid grid-cols-12 gap-2">
-                <BookAnimate />
-                <BookCheckAnimate />
-                <BookOpenAnimate />
-                <Clipboard1Animate />
-                <Clipboard2Animate />
-                <FormAnimate />
-                <NotebookAnimate />
-                <Paper1Animate />
-                <Paper2Animate />
-                <PrintAnimate />
-            </div>
+            <div className="grid grid-cols-16 gap-2">
+                <BookAnimate {...props} />
+                <BookCheckAnimate {...props} />
+                <BookOpenAnimate {...props} />
+                <Clipboard1Animate {...props} />
+                <Clipboard2Animate {...props} />
+                <FormAnimate {...props} />
+                <NotebookAnimate {...props} />
+                <Paper1Animate {...props} />
+                <Paper2Animate {...props} />
+                <PrintAnimate {...props} />
+            </div>        
         </div>
     )
 }

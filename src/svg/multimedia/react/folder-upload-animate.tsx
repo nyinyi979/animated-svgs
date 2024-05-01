@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function FolderUploadAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -35,8 +35,6 @@ export default function FolderUploadAnimate(){
                     animate={{translateY:animationValue.translateY}}
                     d="M512 512L384 640M512 512L640 640M512 512L512 810.667" stroke="black" strokeWidth="20"/>
             </motion.svg>
-
         </div>
-
     )
 }

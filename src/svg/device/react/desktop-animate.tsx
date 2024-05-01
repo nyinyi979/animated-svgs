@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function DesktopAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -36,6 +36,5 @@ export default function DesktopAnimate(){
                     d="M867.556 715.333H156.444C135.212 715.333 118 732.546 118 753.778C118 790.72 147.947 820.667 184.889 820.667H839.111C876.053 820.667 906 790.72 906 753.778C906 732.546 888.788 715.333 867.556 715.333Z" stroke="black" strokeWidth="20"/>
             </motion.svg>
         </div>
-
     )
 }

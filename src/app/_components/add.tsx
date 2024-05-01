@@ -1,30 +1,21 @@
-import Add_PathFill from "@/svg/add/react/add-pathFill";
-import AddRoundFill_PathFill from "@/svg/add/react/add-round-fill-pathFill";
-import AddRoundFill_Scale from "@/svg/add/react/add-round-fill-scale";
-import AddRound_PathFill from "@/svg/add/react/add-round-pathFill";
-import AddRound_Scale from "@/svg/add/react/add-round-scale";
-import Add_Scale from "@/svg/add/react/add-scale";
-import AddSquareFill_Scale from "@/svg/add/react/add-sqaure-fill-scale";
-import AddSquareFill_PathFill from "@/svg/add/react/add-square-fill-pathFill";
-import AddSquare_PathFill from "@/svg/add/react/add-square-pathFill";
-import AddSquare_Scale from "@/svg/add/react/add-square-scale";
+import AddAnimate from "@/svg/add/used/add-animate";
+import AddRoundAnimate from "@/svg/add/used/add-round-animate";
+import AddRoundFillAnimate from "@/svg/add/used/add-round-fill-animate";
+import AddSquareAnimate from "@/svg/add/used/add-square-animate";
+import AddSquareFillAnimate from "@/svg/add/used/add-square-fill-animate";
+import { eachSVGType } from "../page";
 
-export default function AddSVGs(){
+export default function AddSVGs(props:eachSVGType){
     return(
         <div>
             <p>Add (+) svgs</p>
-            <div className="grid grid-cols-12 gap-2">
-                <Add_PathFill />
-                <Add_Scale />
-                <AddRoundFill_PathFill />
-                <AddRoundFill_Scale />
-                <AddRound_PathFill />
-                <AddRound_Scale />
-                <AddSquareFill_PathFill />
-                <AddSquareFill_Scale />
-                <AddSquare_PathFill />
-                <AddSquare_Scale />
-            </div>
+            <div className="grid grid-cols-16 gap-2">
+                <AddAnimate {...props} />
+                <AddSquareAnimate {...props} />
+                <AddSquareFillAnimate {...props} />
+                <AddRoundAnimate {...props} />
+                <AddRoundFillAnimate {...props} />
+            </div>        
         </div>
     )
 }

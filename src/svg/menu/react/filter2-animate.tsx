@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function Filter2Animate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -29,8 +29,14 @@ export default function Filter2Animate(){
                 animate={{scale:animationValue.scale}}
                 viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg"
             >
-                <path d="M469.333 341.333L853.333 341.333" stroke="black" strokeWidth="20" strokeLinecap="round"/>
-                <path d="M170.667 682.667L597.333 682.667" stroke="black" strokeWidth="20" strokeLinecap="round"/>
+                <motion.path 
+                    initial={{pathLength:1}}
+                    animate={{pathLength:[animationValue.pathLength,1]}}
+                    d="M469.333 341.333L853.333 341.333" stroke="black" strokeWidth="20" strokeLinecap="round"/>
+                <motion.path 
+                    initial={{pathLength:1}}
+                    animate={{pathLength:[animationValue.pathLength,1]}}
+                    d="M170.667 682.667L597.333 682.667" stroke="black" strokeWidth="20" strokeLinecap="round"/>
                 <ellipse cx="298.667" cy="341.333" rx="128" ry="128" transform="rotate(90 298.667 341.333)" stroke="black" strokeWidth="20" strokeLinecap="round"/>
                 <ellipse cx="725.333" cy="682.667" rx="128" ry="128" transform="rotate(90 725.333 682.667)" stroke="black" strokeWidth="20" strokeLinecap="round"/>
             </motion.svg>

@@ -1,20 +1,21 @@
-import CheckDouble_PathFill from "@/svg/check/react/check-double-pathfill";
-import Check_PathFill from "@/svg/check/react/check-pathfill";
-import CheckRingFill_PathFill from "@/svg/check/react/check-ring-fill-pathFill";
-import CheckRing_PathFill from "@/svg/check/react/check-ring-pathFill";
-import CheckRound_PathFill from "@/svg/check/react/check-round-pathFill";
+import CheckAnimate from "@/svg/check/used/check-animate";
+import CheckDoubleAnimate from "@/svg/check/used/check-double-animate";
+import CheckRingAnimate from "@/svg/check/used/check-ring-animate";
+import CheckRingFillAnimate from "@/svg/check/used/check-ring-fill-animate";
+import CheckRoundAnimate from "@/svg/check/used/check-round-animate";
+import { eachSVGType } from "../page";
 
-export default function CheckSVGs(){
+export default function CheckSVGs(props:eachSVGType){
     return(
         <div>
             <p>Check svgs</p>
-            <div className="grid grid-cols-12 gap-2">
-                <Check_PathFill />
-                <CheckDouble_PathFill />
-                <CheckRing_PathFill />
-                <CheckRingFill_PathFill />
-                <CheckRound_PathFill />
-            </div>
+            <div className="grid grid-cols-16 gap-2">
+                <CheckAnimate {...props} />
+                <CheckRoundAnimate {...props} />
+                <CheckDoubleAnimate {...props} />
+                <CheckRingAnimate {...props} />
+                <CheckRingFillAnimate {...props} />
+            </div>        
         </div>
     )
 }

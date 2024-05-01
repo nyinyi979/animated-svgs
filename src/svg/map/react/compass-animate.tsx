@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function CompassAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -42,6 +42,5 @@ export default function CompassAnimate(){
                     cx="512" cy="512" r="384" stroke="black" strokeWidth="20"/>
             </motion.svg>
         </div>
-
     )
 }

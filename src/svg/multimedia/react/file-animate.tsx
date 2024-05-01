@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function FileAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -39,6 +39,5 @@ export default function FileAnimate(){
                 <path d="M554.667 128V298.667C554.667 338.893 554.667 359.006 567.163 371.503C579.66 384 599.774 384 640 384H810.667" stroke="black" strokeWidth="20"/>
             </motion.svg>
         </div>
-
     )
 }

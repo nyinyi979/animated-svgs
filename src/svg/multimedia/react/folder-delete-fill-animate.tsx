@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function FolderDeleteFillAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -36,8 +36,6 @@ export default function FolderDeleteFillAnimate(){
                     d="M128 243.333C128 229.191 128 222.12 132.393 217.727C136.787 213.333 143.858 213.333 158 213.333H414.24C420.372 213.333 423.437 213.333 426.194 214.475C428.95 215.617 431.118 217.785 435.453 222.12L554.667 341.333H128V243.333Z" stroke="black" strokeWidth="20"/>
                 <path d="M405.333 704L618.667 490.667M618.667 704L405.333 490.667" stroke="black" strokeWidth="20"/>
             </motion.svg>
-
         </div>
-
     )
 }

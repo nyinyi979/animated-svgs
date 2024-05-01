@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function DownloadAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -42,6 +42,5 @@ export default function DownloadAnimate(){
                     d="M213.333 682.667L213.333 725.333C213.333 772.462 251.538 810.667 298.667 810.667L725.333 810.667C772.462 810.667 810.667 772.462 810.667 725.333V682.667" stroke="black" strokeWidth="20"/>
             </motion.svg>
         </div>
-
     )
 }

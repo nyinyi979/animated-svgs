@@ -1,21 +1,22 @@
-import ConsoleAnimate from "@/svg/device/react/console-animate";
-import CPUAnimate from "@/svg/device/react/cpu-animate";
-import DesktopAnimate from "@/svg/device/react/desktop-animate";
-import MobileAnimate from "@/svg/device/react/mobile-animate";
-import MouseAnimate from "@/svg/device/react/mouse-animate";
-import WatchAnimate from "@/svg/device/react/watch-animate";
+import ConsoleAnimate from "@/svg/device/used/console-animate";
+import CPUAnimate from "@/svg/device/used/cpu-animate";
+import DesktopAnimate from "@/svg/device/used/desktop-animate";
+import MobileAnimate from "@/svg/device/used/mobile-animate";
+import MouseAnimate from "@/svg/device/used/mouse-animate";
+import WatchAnimate from "@/svg/device/used/watch-animate";
+import { eachSVGType } from "../page";
 
-export default function DeviceSVGs(){
+export default function DeviceSVGs(props:eachSVGType){
     return(
         <div>
             <p>Devices svgs</p>
-            <div className="grid grid-cols-12 gap-2">
-                <MobileAnimate />
-                <DesktopAnimate />
-                <MouseAnimate />
-                <CPUAnimate />
-                <ConsoleAnimate />
-                <WatchAnimate />
+            <div className="grid grid-cols-16 gap-2">
+                <MobileAnimate {...props} />
+                <DesktopAnimate {...props} />
+                <MouseAnimate {...props} />
+                <CPUAnimate {...props} />
+                <ConsoleAnimate {...props} />
+                <WatchAnimate {...props} />
             </div>
         </div>
     )

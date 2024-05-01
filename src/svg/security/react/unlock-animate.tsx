@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function UnlockAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -43,6 +43,5 @@ export default function UnlockAnimate(){
                     cx="512" cy="640" rx="85.3333" ry="85.3333" fill="black"/>
             </motion.svg>
         </div>
-
     )
 }

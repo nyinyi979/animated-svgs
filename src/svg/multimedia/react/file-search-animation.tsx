@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function FileSearchAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -43,6 +43,5 @@ export default function FileSearchAnimate(){
                     d="M896 896L832 832" stroke="#33363F" strokeWidth="20" strokeLinecap="round"/>
             </svg>
         </div>
-
     )
 }

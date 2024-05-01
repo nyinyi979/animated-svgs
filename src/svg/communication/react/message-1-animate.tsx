@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function Message1Animate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -33,6 +33,5 @@ export default function Message1Animate(){
                 <path d="M170.667 384L511.105 554.219C511.668 554.501 512.331 554.501 512.894 554.219L853.333 384" stroke="black" strokeWidth="20"/>
             </motion.svg>
         </div>
-
     )
 }

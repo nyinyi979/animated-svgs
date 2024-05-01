@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function FileAddAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -24,7 +24,11 @@ export default function FileAddAnimate(){
             onPointerEnter={animate}
             onPointerLeave={inanimate}
         >
-            <svg viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <motion.svg 
+                initial={{scale:1}}
+                animate={{scale:animationValue.scale}}
+                viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg"
+            >
                 <motion.path
                     initial={{pathLength:1}} animate={{pathLength:[animationValue.pathLength,1]}}
                     d="M384 554.667L640 554.667" stroke="black" strokeWidth="20" strokeLinecap="round"/>
@@ -41,8 +45,7 @@ export default function FileAddAnimate(){
                 <motion.path
                     initial={{scale:1}} animate={{scale:animationValue.scale}}
                     d="M896 256L640 256" stroke="black" strokeWidth="20" strokeLinecap="round"/>
-            </svg>
+            </motion.svg>
         </div>
-
     )
 }

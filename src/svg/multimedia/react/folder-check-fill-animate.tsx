@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {animateValue, motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function FolderCheckFillAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -36,8 +36,6 @@ export default function FolderCheckFillAnimate(){
                     animate={{pathLength:[animationValue.pathLength,1]}}
                     d="M384 576L469.227 661.227C469.286 661.286 469.381 661.286 469.439 661.227L640 490.667" stroke="black" strokeWidth="20"/>
             </motion.svg>
-
         </div>
-
     )
 }

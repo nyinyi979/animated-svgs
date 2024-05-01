@@ -1,17 +1,18 @@
-import BellAnimate from "@/svg/notification/react/bell-animate";
-import BellPinAnimate from "@/svg/notification/react/bell-pin-animate";
-import FireAnimate from "@/svg/notification/react/fire-animate";
-import LampAnimate from "@/svg/notification/react/lamp-animate";
+import BellAnimate from "@/svg/notification/used/bell-animate";
+import BellPinAnimate from "@/svg/notification/used/bell-pin-animate";
+import FireAnimate from "@/svg/notification/used/fire-animate";
+import LampAnimate from "@/svg/notification/used/lamp-animate";
+import { eachSVGType } from "../page";
 
-export default function NotificationSVGs(){
+export default function NotificationSVGs(props: eachSVGType){
     return(
         <div>
             <p>Notifications svgs</p>
-            <div className="grid grid-cols-12 gap-2">
-                <BellAnimate />
-                <BellPinAnimate />
-                <FireAnimate />
-                <LampAnimate />
+            <div className="grid grid-cols-16 gap-2">
+                <BellAnimate {...props} />
+                <BellPinAnimate {...props} />
+                <FireAnimate {...props} />
+                <LampAnimate {...props} />
             </div>
         </div>
     )

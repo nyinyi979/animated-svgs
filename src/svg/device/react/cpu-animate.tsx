@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function CPUAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -71,6 +71,5 @@ export default function CPUAnimate(){
                     d="M170.667 597.333L298.667 597.333" stroke="black" strokeWidth="20" strokeLinecap="round"/>
             </motion.svg>
         </div>
-
     )
 }

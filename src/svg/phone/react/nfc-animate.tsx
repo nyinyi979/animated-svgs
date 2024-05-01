@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function NFCAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -42,6 +42,5 @@ export default function NFCAnimate(){
                 <path d="M216.397 682.667C186.438 630.777 170.667 571.917 170.667 512C170.667 452.083 186.438 393.223 216.396 341.333" stroke="black" strokeWidth="20" strokeLinecap="round"/>
             </motion.svg>
         </div>
-
     )
 }

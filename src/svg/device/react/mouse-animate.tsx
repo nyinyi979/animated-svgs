@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function MouseAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -36,6 +36,5 @@ export default function MouseAnimate(){
                     d="M512 170.667V384" stroke="black" strokeWidth="20" strokeLinecap="round" strokeLinejoin="round"/>
             </motion.svg>
         </div>
-
     )
 }

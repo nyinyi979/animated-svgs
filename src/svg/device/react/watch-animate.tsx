@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function WatchAnimate(){
     const [animationValue, setAnimationValue] = React.useState({
@@ -40,6 +40,5 @@ export default function WatchAnimate(){
                     d="M341.333 936.667C341.333 937.61 341.333 938.081 341.626 938.374C341.919 938.667 342.391 938.667 343.333 938.667H680.667C681.61 938.667 682.081 938.667 682.374 938.374C682.667 938.081 682.667 937.61 682.667 936.667V725.333H341.333V936.667Z" fill="black"/>
             </motion.svg>
         </div>
-
     )
 }
