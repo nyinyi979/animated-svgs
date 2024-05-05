@@ -19,11 +19,25 @@ import FolderCheckFillAnimate from "@/svg/multimedia/used/folder-check-fill-anim
 import FolderUploadFillAnimate from "@/svg/multimedia/used/folder-upload-fill-animate";
 import FolderSearchFillAnimate from "@/svg/multimedia/used/folder-search-fill-animate";
 import { eachSVGType } from "../page";
+import { motion } from "framer-motion"
+import { useRouter } from "next/navigation";
 
 export default function MMSVGs(props: eachSVGType){
+    const router = useRouter();
+    const setURL = () =>{
+        router.replace("/#multimedia",{scroll:false})
+    }
+    const unsetURL = () =>{
+        router.replace("/#no",{scroll:false})
+    }
     return(
-        <div>
-            <p>Multimedia svgs</p>
+        <div id="no">
+            <motion.p
+                onViewportEnter={setURL}
+                onViewportLeave={unsetURL}
+            >
+               Multimedia svgs
+            </motion.p>
             <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
                 <FolderAnimate {...props} />
                 <FolderFileAnimate {...props} />

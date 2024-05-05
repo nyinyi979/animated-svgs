@@ -7,11 +7,25 @@ import MessageOpenAnimate from "@/svg/communication/used/message-open-animate";
 import SendHorizontalAnimate from "@/svg/communication/used/send-horizontal-animate";
 import SendRotatedAnimate from "@/svg/communication/used/send-rotated-animate";
 import { eachSVGType } from "../page";
+import { motion } from "framer-motion"
+import { useRouter } from "next/navigation";
 
 export default function CommunicationSVGs(props:eachSVGType){
+    const router = useRouter();
+    const setURL = () =>{
+        router.replace("/#communication",{scroll:false})
+    }
+    const unsetURL = () =>{
+        router.replace("/#cross",{scroll:false})
+    }
     return(
-        <div>
-            <p>Communication svgs</p>
+        <div id="cross">
+            <motion.p
+                onViewportEnter={setURL}
+                onViewportLeave={unsetURL}
+            >
+                Communication svgs
+            </motion.p>
             <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
                 <CallAnimate {...props} />
                 <Globe1Animate {...props} />

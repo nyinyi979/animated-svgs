@@ -27,6 +27,8 @@ import SoundSVGs from "./_components/sound";
 import TimeSVGs from "./_components/time";
 import MenuSVGs from "./_components/menu";
 import ChartsSVGs from "./_components/charts";
+import Header from "./_components/_header";
+import LeftBar from "./_components/_leftBar";
 export default function Home() {
     const [animationValue, setAnimationValue] = React.useState({
         opacity: 0,
@@ -58,97 +60,105 @@ export default function Home() {
         },500)
     }
   return (
-    <div className="">
-      <AddSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <ArchiveSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <ArrowSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <BookSVGs 
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <ChartsSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <SoundSVGs 
-        drawerAnimate={animate}
-        setDetails={setDetails}  
-      />
-      <CheckSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <CommunicationSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <CrossSVGs 
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <DeviceSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <DownUpSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <MapSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <MenuSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <MMSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <NoSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <NotificationSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />  
-      <PhoneSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <ReactionSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <ScreenSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <SecuritySVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <SettingSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <SignInSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <SocialSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <SortSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <TimeSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <EyeSVGs
-        drawerAnimate={animate}
-        setDetails={setDetails} />
-      <Drawer 
-        inanimate={inanimate}
-        opacity={animationValue.opacity}
-        translateX={animationValue.translateX} 
-        react={details.react}
-        reactNative={details.reactNative}
-        svg={details.svg} 
-        name={details.name}
-        display={display}
-      />
-    </div>  );
+      <div>
+        <Header />
+        <div className="grid lg:grid-cols-1.5 grid-cols-1">
+            <LeftBar />
+            <div id="svg_container" className="lg:col-span-1 col-span-2 mt-5 mb-2 p-2">
+              <AddSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <ArchiveSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <ArrowSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <BookSVGs 
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <ChartsSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <SoundSVGs 
+                drawerAnimate={animate}
+                setDetails={setDetails}  
+              />
+              <CheckSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <CommunicationSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <CrossSVGs 
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <DeviceSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <DownUpSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <EyeSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <MapSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <MenuSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <MMSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <NoSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <NotificationSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />  
+              <PhoneSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <ReactionSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <ScreenSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <SecuritySVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <SettingSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <SignInSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <SocialSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <SortSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+              <TimeSVGs
+                drawerAnimate={animate}
+                setDetails={setDetails} />
+
+              <Drawer 
+                inanimate={inanimate}
+                opacity={animationValue.opacity}
+                translateX={animationValue.translateX} 
+                react={details.react}
+                reactNative={details.reactNative}
+                svg={details.svg} 
+                name={details.name}
+                display={display}
+              />
+            </div> 
+          </div>
+      </div>
+  );
 }
 
 
@@ -163,3 +173,4 @@ export type eachSVGType = {
     setDetails: Dispatch<SetStateAction<details>>,
     drawerAnimate: ()=>void
 }
+

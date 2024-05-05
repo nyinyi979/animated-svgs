@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import { motion } from "framer-motion";
-import { Copied, Copy } from "./copy-done";
+import { Copied,Copy } from "./_copy-done";
 export default function Drawer({inanimate,opacity,react,reactNative,display,svg,translateX,name}:
 {
     opacity: number, 
@@ -30,9 +30,9 @@ export default function Drawer({inanimate,opacity,react,reactNative,display,svg,
                         translateX:translateX,
                     }}
                     style={{display:display?"block":"none"}}
-                    className="lg:w-[30%] w-[70%] h-[100vh] rounded-l-md bg-gray-100/90 p-5 fixed top-0 right-0 overflow-auto z-50"    
+                    className="xl:w-[35%] lg:w-[40%] w-[70%] h-[100vh] rounded-l-md bg-gray-100/90 fixed top-0 right-0 overflow-auto z-50"    
                 >
-                    <p className="text-2xl font-semibold">{name}</p>
+                    <p className="text-2xl font-semibold px-2">{name}</p>
                     <Code heading="React" codes={react}/>
                     <Code heading="React native" codes={reactNative}/>
                     <Code heading="Svg" codes={svg}/>
@@ -66,17 +66,16 @@ function Code({codes,heading}:{codes:string|string[],heading:"React"|"React nati
                 >
                     {activeCode===0? ">" : "<"}
                 </button>}
-    
-        </div>            
-            <div className="roboto w-full overflow-x-auto h-[40%] text-cyan-700 rounded-md whitespace-pre relative p-2 bg-gray-200 shadow-lg">
+            </div>            
+            <div className="roboto w-full border-l-[2px] border-t-[2px] border-gray-300 overflow-x-auto h-[40%] text-cyan-700 rounded-md whitespace-pre relative p-2 shadow-lg">
                 <button 
                     onClick={copyCode}
-                    className="sticky float-right w-7 h-7 right-2 top-2 p-1 bg-cyan-50/70 hover:bg-cyan-100 rounded-md duration-300"
+                    className="sticky float-right w-7 h-7 right-2 top-2 p-1 shadow-lg bg-gray-50 hover:bg-gray-100 rounded-md duration-300"
                 >
                     {copy? <Copied /> : <Copy /> }
                 </button>
                 {isArray? codes[activeCode] : codes}
-        </div>
-    </>
+            </div>
+        </>
     )
 }

@@ -9,3 +9,13 @@
 .roboto{
     font-family: "Roboto";
 }
+
+#svg_container > div{
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+
+#svg_container > div > p{
+    margin: 5px 0;
+    font-size: 20;
+}

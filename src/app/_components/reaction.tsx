@@ -7,11 +7,25 @@ import LabelAnimate from "@/svg/reaction/used/label-animate";
 import PinAnimate from "@/svg/reaction/used/pin-animate";
 import StarAnimate from "@/svg/reaction/used/star-animate";
 import { eachSVGType } from "../page";
+import { motion } from "framer-motion"
+import { useRouter } from "next/navigation";
 
 export default function ReactionSVGs(props: eachSVGType){
+    const router = useRouter();
+    const setURL = () =>{
+        router.replace("/#reaction",{scroll:false})
+    }
+    const unsetURL = () =>{
+        router.replace("/#screen",{scroll:false})
+    }
     return(
-        <div>
-            <p>Reaction svgs</p>
+        <div id="screen">
+            <motion.p
+                onViewportEnter={setURL}
+                onViewportLeave={unsetURL}
+            >
+                Reaction svgs
+            </motion.p>
             <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
                 <BookmarkAnimate {...props} />
                 <Flag1Animate {...props} />

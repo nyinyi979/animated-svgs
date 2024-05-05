@@ -8,11 +8,25 @@ import StopAnimate from "@/svg/sound/used/stop-animate";
 import StopPlayAnimate from "@/svg/sound/used/stop-play-animate";
 import VideoAnimate from "@/svg/sound/used/video-animate";
 import { eachSVGType } from "../page";
+import { motion } from "framer-motion"
+import { useRouter } from "next/navigation";
 
 export default function SoundSVGs(props:eachSVGType){
+    const router = useRouter();
+    const setURL = () =>{
+        router.replace("/#sound",{scroll:false})
+    }
+    const unsetURL = () =>{
+        router.replace("/#time",{scroll:false})
+    }
     return(
-        <div>
-            <p>Sound svgs</p>
+        <div id="time">
+            <motion.p
+                onViewportEnter={setURL}
+                onViewportLeave={unsetURL}
+            >
+                Sound svgs
+            </motion.p>
             <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
                 <MicAnimate {...props} />
                 <MusicAnimate {...props} />

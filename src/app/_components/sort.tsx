@@ -9,11 +9,25 @@ import SortUp2Animate from "@/svg/sort/used/sort-up2-animate";
 import VerticalSort1Animate from "@/svg/sort/used/vertical-sort1-animate";
 import VerticalSort2Animate from "@/svg/sort/used/vertical-sort2-animate";
 import { eachSVGType } from "../page";
+import { motion } from "framer-motion"
+import { useRouter } from "next/navigation";
 
 export default function SortSVGs(props: eachSVGType){
+    const router = useRouter();
+    const setURL = () =>{
+        router.replace("/#sort",{scroll:false})
+    }
+    const unsetURL = () =>{
+        router.replace("/#sound",{scroll:false})
+    }
     return(
-        <div>
-            <p>Sort svgs</p>
+        <div id="sound">
+            <motion.p
+                onViewportEnter={setURL}
+                onViewportLeave={unsetURL}
+            >
+                Sort svgs
+            </motion.p>
             <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
                 <CollapseAnimate {...props} />
                 <ShuffleAnimate {...props} />

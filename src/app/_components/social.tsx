@@ -8,11 +8,25 @@ import Chat3Animate from "@/svg/social/used/chat3-animate";
 import Chat4Animate from "@/svg/social/used/chat4-animate";
 import IGAnimate from "@/svg/social/used/ig-animate";
 import { eachSVGType } from "../page";
+import { motion } from "framer-motion"
+import { useRouter } from "next/navigation";
 
 export default function SocialSVGs(props: eachSVGType){
+    const router = useRouter();
+    const setURL = () =>{
+        router.replace("/#social",{scroll:false})
+    }
+    const unsetURL = () =>{
+        router.replace("/#sort",{scroll:false})
+    }
     return(
-        <div>
-            <p>Social svgs</p>
+        <div id="sort">
+            <motion.p
+                onViewportEnter={setURL}
+                onViewportLeave={unsetURL}
+            >
+                Social svgs
+            </motion.p>
             <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
                 <ChatAdd1Animate {...props} />
                 <ChatAdd2Animate {...props} />

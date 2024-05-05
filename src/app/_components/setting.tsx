@@ -10,11 +10,25 @@ import Search1Animate from "@/svg/setting/used/search1-animate";
 import Search2Animate from "@/svg/setting/used/search2-animate";
 import SettingLinesAnimate from "@/svg/setting/used/setting-lines-animate";
 import { eachSVGType } from "../page";
+import { motion } from "framer-motion"
+import { useRouter } from "next/navigation";
 
 export default function SettingSVGs(props: eachSVGType){
+    const router = useRouter();
+    const setURL = () =>{
+        router.replace("/#setting",{scroll:false})
+    }
+    const unsetURL = () =>{
+        router.replace("/#signin",{scroll:false})
+    }
     return(
-        <div>
-            <p>Setting svgs</p>
+        <div id="signin">
+            <motion.p
+                onViewportEnter={setURL}
+                onViewportLeave={unsetURL}
+            >
+                Setting svgs
+            </motion.p>
             <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
                 <Edit1Animate {...props} />
                 <Edit2Animate {...props} />

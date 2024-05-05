@@ -45,13 +45,27 @@ import RightArrowLineAnimate from "@/svg/arrow/used/right-arrow-line-animate";
 import RightDoubleAnimate from "@/svg/arrow/used/right-double-animate";
 import TopArrowLineAnimate from "@/svg/arrow/used/top-arrow-line-animate";
 import TopDoubleAnimate from "@/svg/arrow/used/top-double-animate";
-import { eachSVGType } from "../page";
 import ExpandDTopAnimate from "@/svg/arrow/used/expand-d-top-animate";
+import { eachSVGType } from "../page";
+import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 export default function ArrowSVGs(props:eachSVGType){
+    const router = useRouter();
+    const setURL = () =>{
+        router.replace("/#arrow",{scroll:false})
+    }
+    const unsetURL = () =>{
+        router.replace("/#book",{scroll:false})
+    }
     return(
-        <div>
-            <p>Arrow svgs</p>
+        <div id="book">
+            <motion.p
+                onViewportEnter={setURL}
+                onViewportLeave={unsetURL}
+            >
+                Arrow svgs
+            </motion.p>
             <div className="grid lg:grid-cols-16 md:grid-cols-12 grid-cols-6 gap-2">
                 <ArrowDownAnimate {...props}/>
                 <ArrowDownLAnimate {...props} />
