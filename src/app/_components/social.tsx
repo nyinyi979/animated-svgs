@@ -9,20 +9,14 @@ import Chat4Animate from "@/svg/social/used/chat4-animate";
 import IGAnimate from "@/svg/social/used/ig-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation";
 
 export default function SocialSVGs(props: eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#social",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#sort",{scroll:false})
+        props.setCurrentID("sort");
     }
     return(
         <div id="sort">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Social svgs

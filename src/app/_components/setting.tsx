@@ -11,20 +11,14 @@ import Search2Animate from "@/svg/setting/used/search2-animate";
 import SettingLinesAnimate from "@/svg/setting/used/setting-lines-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation";
 
 export default function SettingSVGs(props: eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#setting",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#signin",{scroll:false})
+        props.setCurrentID("signin");
     }
     return(
         <div id="signin">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Setting svgs

@@ -7,20 +7,14 @@ import Lightning2Animate from "@/svg/phone/used/lightning2-animate";
 import NFCAnimate from "@/svg/phone/used/nfc-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation";
 
 export default function PhoneSVGs(props: eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#phone",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#reaction",{scroll:false})
+        props.setCurrentID("reaction");
     }
     return(
         <div id="reaction">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Phone svgs

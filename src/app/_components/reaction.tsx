@@ -8,20 +8,14 @@ import PinAnimate from "@/svg/reaction/used/pin-animate";
 import StarAnimate from "@/svg/reaction/used/star-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation";
 
 export default function ReactionSVGs(props: eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#reaction",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#screen",{scroll:false})
+        props.setCurrentID("screen");
     }
     return(
         <div id="screen">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Reaction svgs

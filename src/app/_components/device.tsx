@@ -6,20 +6,14 @@ import MouseAnimate from "@/svg/device/used/mouse-animate";
 import WatchAnimate from "@/svg/device/used/watch-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation";
 
 export default function DeviceSVGs(props:eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#device",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#down-up",{scroll:false})
+        props.setCurrentID("down-up");
     }
     return(
         <div id="down-up">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Device svgs

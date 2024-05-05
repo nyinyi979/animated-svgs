@@ -4,20 +4,14 @@ import FireAnimate from "@/svg/notification/used/fire-animate";
 import LampAnimate from "@/svg/notification/used/lamp-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation";
 
 export default function NotificationSVGs(props: eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#notification",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#phone",{scroll:false})
+        props.setCurrentID("phone");
     }
     return(
         <div id="phone">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Notification svgs

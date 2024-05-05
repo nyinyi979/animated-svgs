@@ -5,20 +5,14 @@ import CrossSquareAnimate from "@/svg/cross/used/cross-square-animate";
 import CrossSquareFillAnimate from "@/svg/cross/used/cross-square-fill-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation";
 
 export default function CrossSVGs(props:eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#cross",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#device",{scroll:false})
+        props.setCurrentID("device");
     }
     return(
         <div id="device">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Cross svgs

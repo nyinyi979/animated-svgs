@@ -7,20 +7,14 @@ import OutAnimate from "@/svg/screen/used/out-animate";
 import ReduceAnimate from "@/svg/screen/used/reduce-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation";
 
 export default function ScreenSVGs(props: eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#screen",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#security",{scroll:false})
+        props.setCurrentID("setting");
     }
     return(
         <div id="security">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Screen svgs

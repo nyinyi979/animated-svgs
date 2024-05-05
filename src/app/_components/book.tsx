@@ -10,20 +10,14 @@ import Paper2Animate from "@/svg/book/used/paper2-animate";
 import PrintAnimate from "@/svg/book/used/print-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
 
 export default function BookSVGs(props:eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#book",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#chart",{scroll:false})
+        props.setCurrentID("chart");
     }
     return(
         <div id="charts">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Books svgs

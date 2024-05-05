@@ -34,6 +34,7 @@ export default function Home() {
         opacity: 0,
         translateX: 50,
     })
+    const [currentID, setCurrentID] = React.useState("");
     const [display, setDisplay] = React.useState(false)
     const [details, setDetails] = React.useState<details>({
         react: ``,
@@ -63,87 +64,112 @@ export default function Home() {
       <div>
         <Header />
         <div className="grid lg:grid-cols-1.5 grid-cols-1">
-            <LeftBar />
+            <LeftBar currentID={currentID} setCurrentID={setCurrentID}/>
             <div id="svg_container" className="lg:col-span-1 col-span-2 mt-5 mb-2 p-2">
               <AddSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <ArchiveSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <ArrowSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <BookSVGs 
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <ChartsSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
-              <SoundSVGs 
-                drawerAnimate={animate}
-                setDetails={setDetails}  
-              />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <CheckSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <CommunicationSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <CrossSVGs 
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <DeviceSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <DownUpSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <EyeSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <MapSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <MenuSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <MMSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <NoSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <NotificationSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />  
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />  
               <PhoneSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <ReactionSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <ScreenSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <SecuritySVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <SettingSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <SignInSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <SocialSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <SortSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
+              <SoundSVGs 
+                drawerAnimate={animate}
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
               <TimeSVGs
                 drawerAnimate={animate}
-                setDetails={setDetails} />
+                setDetails={setDetails}
+                setCurrentID={setCurrentID} />
 
               <Drawer 
                 inanimate={inanimate}
@@ -171,6 +197,7 @@ export type details = {
 
 export type eachSVGType = {
     setDetails: Dispatch<SetStateAction<details>>,
-    drawerAnimate: ()=>void
+    drawerAnimate: ()=>void,
+    setCurrentID: Dispatch<SetStateAction<string>>
 }
 

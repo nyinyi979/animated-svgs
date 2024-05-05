@@ -12,17 +12,12 @@ import { motion } from "framer-motion"
 import { useRouter } from "next/navigation";
 
 export default function SoundSVGs(props:eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#sound",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#time",{scroll:false})
+        props.setCurrentID("time");
     }
     return(
         <div id="time">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Sound svgs

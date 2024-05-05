@@ -5,19 +5,13 @@ import AddSquareAnimate from "@/svg/add/used/add-square-animate";
 import AddSquareFillAnimate from "@/svg/add/used/add-square-fill-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation";
 export default function AddSVGs(props:eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#add",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#archive",{scroll:false})
+        props.setCurrentID("archive");
     }
     return(
         <div>
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Add (+) svgs

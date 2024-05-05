@@ -5,20 +5,14 @@ import CheckRingFillAnimate from "@/svg/check/used/check-ring-fill-animate";
 import CheckRoundAnimate from "@/svg/check/used/check-round-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
 
 export default function CheckSVGs(props:eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#check",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#communication",{scroll:false})
+        props.setCurrentID("communication");
     }
     return(
         <div id="communication">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Check svgs

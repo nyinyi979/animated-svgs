@@ -11,20 +11,14 @@ import StatusAnimate from "@/svg/menu/used/status-animate";
 import WidgetAnimate from "@/svg/menu/used/widget-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation";
 
 export default function MenuSVGs(props: eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#menu",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#multimedia",{scroll:false})
+        props.setCurrentID("multimedia");
     }
     return(
         <div id="multimedia">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Menu svgs

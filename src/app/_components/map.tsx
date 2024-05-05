@@ -6,20 +6,14 @@ import OdometerAnimate from "@/svg/map/used/odometer-animate";
 import PINAnimate from "@/svg/map/used/pin-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation";
 
 export default function MapSVGs(props: eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#map",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#menu",{scroll:false})
+        props.setCurrentID("menu");
     }
     return(
         <div id="menu">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Map svgs

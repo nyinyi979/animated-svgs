@@ -11,20 +11,14 @@ import UserGroupAnimate from "@/svg/signin/used/user-group-animate";
 import UserSquareAnimate from "@/svg/signin/used/user-square-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation";
 
 export default function SignInSVGs(props: eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#signin",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#social",{scroll:false})
+        props.setCurrentID("social");
     }
     return(
         <div id="social">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Sign in svgs

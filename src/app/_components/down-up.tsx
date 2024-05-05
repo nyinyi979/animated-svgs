@@ -6,20 +6,14 @@ import UploadCloudAnimate from "@/svg/down-up/used/upload-cloud";
 import UploadCircleAnimate from "@/svg/down-up/used/upload-circle";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation";
 
 export default function DownUpSVGs(props:eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#down-up",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#eye",{scroll:false})
+        props.setCurrentID("eye");
     }
     return(
         <div id="eye">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Upload/Download svgs

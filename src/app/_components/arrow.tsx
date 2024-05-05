@@ -48,20 +48,14 @@ import TopDoubleAnimate from "@/svg/arrow/used/top-double-animate";
 import ExpandDTopAnimate from "@/svg/arrow/used/expand-d-top-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
 
 export default function ArrowSVGs(props:eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#arrow",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#book",{scroll:false})
+        props.setCurrentID("book");
     }
     return(
         <div id="book">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Arrow svgs

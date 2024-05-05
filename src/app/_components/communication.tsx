@@ -8,20 +8,14 @@ import SendHorizontalAnimate from "@/svg/communication/used/send-horizontal-anim
 import SendRotatedAnimate from "@/svg/communication/used/send-rotated-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation";
 
 export default function CommunicationSVGs(props:eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#communication",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/#cross",{scroll:false})
+        props.setCurrentID("cross");
     }
     return(
         <div id="cross">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Communication svgs

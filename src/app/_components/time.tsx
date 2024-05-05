@@ -7,20 +7,14 @@ import Timer2Animate from "@/svg/time/used/timer2-animate";
 import WatchAnimate from "@/svg/time/used/watch-animate";
 import { eachSVGType } from "../page";
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation";
 
 export default function TimeSVGs(props: eachSVGType){
-    const router = useRouter();
-    const setURL = () =>{
-        router.replace("/#time",{scroll:false})
-    }
     const unsetURL = () =>{
-        router.replace("/",{scroll:false})
+        props.setCurrentID("");
     }
     return(
         <div id="time">
             <motion.p
-                onViewportEnter={setURL}
                 onViewportLeave={unsetURL}
             >
                 Time svgs
