@@ -24,7 +24,7 @@ export default function Introduction(){
            style={{display:display?"block":"none"}}
           >
             Pull the repository from the link in the header. Name the folder of SVG, React, React native <br />
-            "N-&lt;SVG-Name&gt;-&lt;Contributor-Name&gt;" <br />
+            &quot;N-&lt;SVG-Name&gt;-&lt;Contributor-Name&gt;&quot; <br />
             N - new(will be removed after all the icons are arranged properly in each react, reactNative and svg folders) <br />
             SVG-Name - the name of the SVG group <br />
             Contributer name - leave blank if you want it to be unknown <br />
