@@ -29,6 +29,7 @@ import MenuSVGs from "./_components/menu";
 import ChartsSVGs from "./_components/charts";
 import Header from "./_components/_header";
 import LeftBar from "./_components/_leftBar";
+import Introduction from "./_components/_intro";
 export default function Home() {
     const [animationValue, setAnimationValue] = React.useState({
         opacity: 0,
@@ -66,6 +67,7 @@ export default function Home() {
         <div className="grid lg:grid-cols-1.5 grid-cols-1">
             <LeftBar currentID={currentID} setCurrentID={setCurrentID}/>
             <div id="svg_container" className="lg:col-span-1 col-span-2 mt-5 mb-2 p-2">
+              <Introduction />
               <AddSVGs
                 drawerAnimate={animate}
                 setDetails={setDetails}
